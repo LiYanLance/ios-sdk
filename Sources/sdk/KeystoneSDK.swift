@@ -3,7 +3,9 @@ import JavaScriptCore
 
 
 public class KeystoneSDK {
-    func parseSolSignature(cbor_hex: String) -> SolSignature {
+    public init() {}
+
+    public func parseSolSignature(cbor_hex: String) -> SolSignature {
 
         var err = ExternError();
         let err_ptr: UnsafeMutablePointer<ExternError> = UnsafeMutablePointer(&err)
